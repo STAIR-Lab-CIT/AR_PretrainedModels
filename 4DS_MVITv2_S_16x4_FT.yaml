@@ -1,18 +1,18 @@
-TASK: ssl-4ds-maskfeat_FT_vanilla
+TASK: fine tuning
 TRAIN:
   ENABLE: True
   DATASET: kinetics
   BATCH_SIZE: 10
   EVAL_PERIOD: 1
   CHECKPOINT_PERIOD: 5
-  AUTO_RESUME: False  # for vanilla
+  AUTO_RESUME: True
   CHECKPOINT_EPOCH_RESET: True
-  #  CHECKPOINT_FILE_PATH: checkpoints-ssl4dsMaskFeat/ssl-4ds_checkpoint_epoch_00300.pyth
+  CHECKPOINT_FILE_PATH: <PATH TO PRETRAINED MODEL>
   MIXED_PRECISION: False
 DATA:
   USE_OFFSET_SAMPLING: True
   DECODING_BACKEND: pyav  #torchvision
-  PATH_TO_DATA_DIR: /home/dl-box/datacache/ucf101/
+  PATH_TO_DATA_DIR: <PATH TO TARGET DATASET>
   NUM_FRAMES: 16
   SAMPLING_RATE: 4
   TRAIN_JITTER_SCALES: [256, 320]
@@ -25,7 +25,7 @@ DATA:
 MVIT:
   DEPTH: 16 # def 12
   NUM_HEADS: 3 # default 12 16
-  EMBED_DIM: 96  # 384 # def 192 768 384 1024    #########################
+  EMBED_DIM: 384 # def 192 768 384 1024    #########################
   NUM_HEADS: 1 # default 12 16
   EMBED_DIM: 96 # def 256 192 768 384 1024
   PATCH_KERNEL: [3, 7, 7]
@@ -83,7 +83,7 @@ SOLVER:
   OPTIMIZING_METHOD: adamw
   COSINE_AFTER_WARMUP: True
 MODEL:
-  NUM_CLASSES: 101
+  NUM_CLASSES: <NUMER OF TARGET CLASSES>
   ARCH: mvit
   MODEL_NAME: MViT
   LOSS_FUNC: soft_cross_entropy
