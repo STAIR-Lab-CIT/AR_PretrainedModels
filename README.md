@@ -32,12 +32,13 @@ Paper
 
 How to use pretrained models
 1. MAE
-python tools/run_net.py \
+   
+``python tools/run_net.py \
   --cfg configs/masked_ssl/k400_VIT_L_16x4_FT.yaml \
   DATA.PATH_TO_DATA_DIR path_to_your_Kinetics_dataset \
-  TRAIN.CHECKPOINT_FILE_PATH path_to_your_pretrain_checkpoint
+  TRAIN.CHECKPOINT_FILE_PATH path_to_your_pretrain_checkpoint``
 
-2. MaskFeat
+3. MaskFeat
 python tools/run_net.py \
   --cfg configs/masked_ssl/k400_MVITv2_L_16x4_FT.yaml \
   DATA.PATH_TO_DATA_DIR path_to_your_Kinetics_dataset \
