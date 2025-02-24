@@ -35,13 +35,16 @@ How to use pretrained models
    
 ```
 python tools/run_net.py \
-  --cfg configs/masked_ssl/k400_VIT_L_16x4_FT.yaml \
+  --cfg configs/masked_ssl/4DS_VIT_B_16x4_FT.yaml \ 
   DATA.PATH_TO_DATA_DIR path_to_your_Kinetics_dataset \
   TRAIN.CHECKPOINT_FILE_PATH path_to_your_pretrain_checkpoint
 ```
 
-3. MaskFeat
+2. MaskFeat
+```
 python tools/run_net.py \
-  --cfg configs/masked_ssl/k400_MVITv2_L_16x4_FT.yaml \
+  --cfg configs/masked_ssl/4DS_MVITv2_S_16x4_FT.yaml \
   DATA.PATH_TO_DATA_DIR path_to_your_Kinetics_dataset \
   TRAIN.CHECKPOINT_FILE_PATH path_to_your_pretrain_checkpoint
+```
+
