@@ -7,7 +7,7 @@ TRAIN:
   CHECKPOINT_PERIOD: 5
   AUTO_RESUME: True   
   CHECKPOINT_EPOCH_RESET: True
-  CHECKPOINT_FILE_PATH: <PATH to MAE Pretrained model checkpoint>
+  CHECKPOINT_FILE_PATH: <PATH to MAE Pretrained model>
 DATA:
   USE_OFFSET_SAMPLING: True
   DECODING_BACKEND: pyav  # torchvision
@@ -72,7 +72,7 @@ SOLVER:
   WEIGHT_DECAY: 0.05
   OPTIMIZING_METHOD: adamw
 MODEL:
-  NUM_CLASSES: 101
+  NUM_CLASSES: <NUMBER OF TARGET CLASSES>
   ARCH: mvit
   MODEL_NAME: MViT
   LOSS_FUNC: soft_cross_entropy # default cross_entropy
