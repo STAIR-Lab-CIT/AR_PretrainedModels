@@ -1,13 +1,10 @@
 # AR_PretrainedModels
 Pretrained models for action recognition models
 
-## Summary
-This repository supp
+This repository provides pre-training models for people who want to develop action recognition AI applications.
+Below we describe the datasets, model architecture, pre-training methods,  used for pre-training, and how to use the pre-trained models.
 
-このレポジトリでは、動作認識AIを開発してみようという人達のための事前学習モデルを提供している。
-以下、モデルアーキテクチャ、事前学習方法、事前学習に用いたデータセット、事前学習モデルの使い方について記す。
-
-Dataset
+## Dataset
 The dataset for pretraining 
 Models are pretrained by the dataset that combined four exsiting datasets for action videos.  They are
 * stair actions
@@ -16,21 +13,25 @@ Models are pretrained by the dataset that combined four exsiting datasets for ac
 * subset of Kinetics 700
 Toltal number of videos is 348,879.
 
-Codebase
+## Codebase
 Codes for models and training scripts etc. are based on the codebase “SlowFast” of Meta Research (https://github.com/facebookresearch/SlowFast/tree/main).   
 Users have to install first “slowfast” before using pretrained models.
 
-事前学習方式
-1. Masked autoencoder
-論文：Masked Autoencoders As Spatiotemporal Learners
-Paper
+## 事前学習方式
+1. MAE (Masked AutoEncoder)
+Title: [Masked Autoencoders As Spatiotemporal Learners](https://arxiv.org/abs/2205.09113)
 
 2. MaskFeat
-論文：Masked Feature Prediction for Self-Supervised Visual Pre-Training
-Paper  
+Title: [Masked Feature Prediction for Self-Supervised Visual Pre-Training](https://arxiv.org/abs/2112.09133)
 
+## Pretrained models
 
-How to use pretrained models
+1. A model pretrained by MAE for 200 epochs
+[DL](https://drive.google.com/file/d/1JwuFBfcK1W7ngOI13bUqIAqSIV1Z8RQF/view?usp=sharing)
+2. A model pretrained by MaskFeat for 300 epochs
+[DL](https://drive.google.com/file/d/1LDxOrvp-Nvb43dec0s9q9YIsQ3qdQJ09/view?usp=sharing)
+
+## How to use pretrained models
 1. MAE
    
 ```
