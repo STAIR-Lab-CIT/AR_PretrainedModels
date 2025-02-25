@@ -1,11 +1,9 @@
 # AR_PretrainedModels
 ### Pretrained models for action recognition models
 
-This repository provides pre-training models for people who want to develop action recognition AI applications.
-Below we describe the datasets, model architecture, pre-training methods,  used for pre-training, and how to use the pre-trained models.
+This repository provides pre-trained models for people who want to develop their own action recognition AI applications.
 
-## Dataset
-The dataset for pretraining 
+## Dataset used for pretraining
 Models are pretrained by the dataset that combined four exsiting datasets for action videos.  They are
 * stair actions
 * Activitynet
@@ -15,9 +13,9 @@ Toltal number of videos is 348,879.
 
 ## Codebase
 Codes for models and training scripts etc. are based on the codebase “SlowFast” of Meta Research (https://github.com/facebookresearch/SlowFast/tree/main).   
-Users have to install first “slowfast” before using pretrained models.
+Before using pretrained models, users have to first install “slowfast”.
 
-## 事前学習方式
+## Pretraining methods
 1. MAE (Masked AutoEncoder)
 Title: [Masked Autoencoders As Spatiotemporal Learners](https://arxiv.org/abs/2205.09113)
 
