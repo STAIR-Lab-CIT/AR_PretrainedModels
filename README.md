@@ -1,5 +1,5 @@
 # AR_PretrainedModels
-Pretrained models for action recognition models
+### Pretrained models for action recognition models
 
 This repository provides pre-training models for people who want to develop action recognition AI applications.
 Below we describe the datasets, model architecture, pre-training methods,  used for pre-training, and how to use the pre-trained models.
