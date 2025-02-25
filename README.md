@@ -42,4 +42,4 @@ python tools/run_net.py \
 python tools/run_net.py \
   --cfg configs/masked_ssl/4DS_MVITv2_S_16x4_FT.yaml 
 ```
-In both cases, a user need to specify some fields in the config files such as  ``PATH_TO_DATA_DIR`` and ``CHECKPOINT_FILE_PATH``.
+In both cases, users need to specify some fields in the config files such as  ``PATH_TO_DATA_DIR``, ``CHECKPOINT_FILE_PATH`` and ``NUM_CLASSES``.
