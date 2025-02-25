@@ -12,7 +12,7 @@ Models are pretrained by the dataset that combined four exsiting datasets for ac
 Toltal number of videos is 348,879.
 
 ## Codebase
-Codes for models and training scripts etc. are based on the codebase “SlowFast” of Meta Research (https://github.com/facebookresearch/SlowFast/tree/main).   
+Codes for models and training scripts etc. are based on the codebase [“SlowFast”](https://github.com/facebookresearch/SlowFast/tree/main) of Meta Research.   
 Before using pretrained models, users have to first install “slowfast”.
 
 ## Pretraining methods
